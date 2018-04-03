@@ -23,4 +23,12 @@ git reset --hard HEAD^
 只要当前命令行窗口没有被关掉，若想在回去时运行git reset --hard <commit id> 
 但是如果关掉电脑后后悔了，在想恢复到新版本怎么办呢。此时可以运行git reflog查看历史命令历史命令中会有commit id
 
+8.查看历史命令
+git reflog 
+查看历史命令一边确定要回到未来的哪个版本
 
+9. 让文件回到最近一次git commit 或者git add时的状态
+git checkout --<file>
+
+10. 将暂停区的修改回退到工作区
+git reset HEAD <file>
